@@ -56,7 +56,6 @@ describe('index.js', () => {
         .onFirstCall().returns(0.7)
         .onSecondCall().returns(0.5)
         .onThirdCall().returns(0.1);
-
       expect(tailsNeverFails()).to.eq('You got 2 tails in a row!');
     });
 
